@@ -14,7 +14,7 @@
         android:layout_marginTop="50dp"
         android:ems="10"
         android:hint="Digite um valor em Euros:"
-        android:inputType="text"
+        android:inputType="number|numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
