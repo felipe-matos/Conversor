@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnConversor.setOnClickListener {
             val euros = binding.editEuro.text.toString().toDouble()
-            val dolares = euros * 1.08
+            val dolares = String.format("%.2f",euros * 1.08)
 
-            binding.textResultado.text = dolares.toString()
+            "${dolares} $".also { binding.textResultado.text = it }
         }
     }
 }
